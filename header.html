@@ -1,1 +1,25 @@
-<meta http-equiv="refresh" content="60">
+
+<style>
+  /* Define a cor de fundo do HTML para casar com o tema Cosmo */
+  html, body { 
+    background-color: #f9f9f9 !important; 
+  }
+  
+  /* Adiciona um fade-in suave quando a página carrega */
+  body {
+    animation: fadeIn 0.5s;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+
+<script>
+  // Em vez de meta-refresh, usamos JS para recarregar a cada 60s
+  // O "true" força o recarregamento do servidor, mas o CSS evita o flash
+  setTimeout(function(){
+     window.location.reload();
+  }, 60000); 
+</script>
+
